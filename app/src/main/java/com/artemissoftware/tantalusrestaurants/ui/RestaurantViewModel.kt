@@ -16,11 +16,15 @@ class RestaurantViewModel @Inject constructor(api: RestaurantApi) : ViewModel() 
     val restaurants: LiveData<List<Restaurant>> = restaurantsLiveData
 
 
-//    init {
+    init {
+//        viewModelScope.launch {
+//
+//        }
+
 //        viewModelScope.launch {
 //            val restaurants = api.getRestaurants()
 //            delay(2000)
 //            restaurantsLiveData.value = restaurants
 //        }
-//    }
+    }
 }
