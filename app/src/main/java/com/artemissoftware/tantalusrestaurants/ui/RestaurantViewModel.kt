@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.artemissoftware.tantalusrestaurants.api.RestaurantApi
 import com.artemissoftware.tantalusrestaurants.data.Restaurant
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -21,9 +22,9 @@ class RestaurantViewModel @Inject constructor(api: RestaurantApi) : ViewModel() 
     init {
 
         viewModelScope.launch {
-//            val restaurants = api.getRestaurants()
-//            delay(2000)
-//            restaurantsLiveData.value = restaurants
+            val restaurants = api.getRestaurants()
+            delay(2000) // ONLY FOR TESTING - REMOVE IN REAL APP
+            restaurantsLiveData.value = restaurants
         }
     }
 }
