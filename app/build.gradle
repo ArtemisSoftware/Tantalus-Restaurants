@@ -61,6 +61,10 @@ dependencies {
     implementation "com.google.dagger:hilt-android:$rootProject.dagger_hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$rootProject.dagger_hilt_version"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
+
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0"
 }
 kapt {
     correctErrorTypes true

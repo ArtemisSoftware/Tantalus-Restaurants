@@ -1,7 +1,8 @@
-package com.artemissoftware.tantalusrestaurants
+package com.artemissoftware.tantalusrestaurants.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.artemissoftware.tantalusrestaurants.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
