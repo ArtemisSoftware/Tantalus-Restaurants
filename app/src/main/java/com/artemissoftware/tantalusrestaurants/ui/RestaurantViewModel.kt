@@ -12,7 +12,7 @@ import javax.inject.Inject
 @HiltViewModel
 class RestaurantViewModel @Inject constructor(repository: RestaurantRepository) : ViewModel() {
 
-    private val restaurants = repository.getRestaurants().asLiveData()
+    val restaurants = repository.getRestaurants().asLiveData()
 
 // Old version
 //    private val restaurantsLiveData = MutableLiveData<List<Restaurant>>()
