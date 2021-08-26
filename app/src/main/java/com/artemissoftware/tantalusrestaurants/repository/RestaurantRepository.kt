@@ -16,7 +16,7 @@ class RestaurantRepository @Inject constructor(
     fun getRestaurants() = networkBoundResource(
         query = { restaurantDao.getAllRestaurants() },
         fetch = {
-            delay(2000)
+            delay(2000)  // ONLY FOR TESTING - REMOVE IN REAL APP
             api.getRestaurants()
         },
         saveFetchResult = { restaurants ->
